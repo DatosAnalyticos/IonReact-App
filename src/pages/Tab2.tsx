@@ -28,9 +28,10 @@ const Tab2: React.FC = () => {
 						{photos.map((photo, index) => (
 							<IonCol size="6" key={index}>
 								<IonImg src={photo.webviewPath} />
+								{/* <IonImg src={photo.base64 ?? photo.webviewPath} /> */}
 							</IonCol>
 						))}
-					</IonRow>
+					</IonRow>	
 				</IonGrid>
 				<IonFab vertical="bottom" horizontal="center" slot="fixed">
 					<IonFabButton onClick={() => takePhoto()}>
